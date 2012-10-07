@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    <link rel="stylesheet" href="{{ pathto('_static/all.css', 1) }}" type="text/css" />
+    <script src="{{ pathto('_static/all.js', 1) }}"></script>
+</head>
+<body>
+<div class="container">
+    <div id="header">
+        <h1 class="title_01">{{ title }}</h1>
+    </div>
+    <div class="main_content">
+        <div class="box_columns clear_fix">
+            <div class="column_01">
+                <div class="submenu">
+                    <ul class="list_submenu">
+                        {{ toctree(maxdepth=1) }}
+                    </ul>
+                </div>
+                {% if display_toc %}
+                <div class="toc">
+                    <h2 class="title_05">Table of contents</h2>
+                    <div class="toc-content">
+                        {{ toc }}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            <div class="column_02">
+                <div class="box_title">
+                    <h1 class="title_01">{{ title }}</h1>
+                </div>
+                <div class="box_article doc_page">
+                    {% block body %}{% endblock %}
+                </div>
+                {% if prev or next %}
+                <div class="navigation">
+                    {% if prev %}
+                        <a href="{{ prev.link|e }}">&laquo;&nbsp;{{ prev.title }}</a>
+                    {% endif %}
+                    <span class="separator">|</span>
+                    {% if next %}
+                        <a href="{{ next.link|e }}">{{ next.title }}&nbsp;&raquo;</a>
+                    {% endif %}
+                </div>
+                <div class="box_hr">
+                    <hr/>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/symfony-tr.js"></script>
+</body>
+</html>
