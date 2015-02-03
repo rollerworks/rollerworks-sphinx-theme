@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
-    <link rel="stylesheet" href="{{ pathto('_static/all.css', 1) }}" type="text/css" />
+    <title>{{ title|striptags|e }} - {{ shorttitle }}</title>
+    <link rel="stylesheet" href="{{ pathto('_static/all.css', 1) }}" type="text/css"/>
     <script src="{{ pathto('_static/all.js', 1) }}"></script>
 </head>
 <body>
 <div class="container">
-    <div id="header">
-        <h1 class="title_01">{{ title }}</h1>
+    <div class="header">
+        <h1>{{ shorttitle }} </h1>
     </div>
     <div class="main_content">
         <div class="box_columns clear_fix">
@@ -21,6 +21,7 @@
                 {% if display_toc %}
                 <div class="toc">
                     <h2 class="title_05">Table of contents</h2>
+
                     <div class="toc-content">
                         {{ toc }}
                     </div>
@@ -37,11 +38,11 @@
                 {% if prev or next %}
                 <div class="navigation">
                     {% if prev %}
-                        <a href="{{ prev.link|e }}">&laquo;&nbsp;{{ prev.title }}</a>
+                    <a href="{{ prev.link|e }}">&laquo;&nbsp;{{ prev.title }}</a>
                     {% endif %}
                     <span class="separator">|</span>
                     {% if next %}
-                        <a href="{{ next.link|e }}">{{ next.title }}&nbsp;&raquo;</a>
+                    <a href="{{ next.link|e }}">{{ next.title }}&nbsp;&raquo;</a>
                     {% endif %}
                 </div>
                 <div class="box_hr">
