@@ -2755,6 +2755,10 @@ div.admonition {
     width: 92%;
 }
 
+div.admonition .last {
+    padding-right: 5px;
+}
+
 div.note {
     background: url("note.png") no-repeat 10px 20px #ecf0f1;
 }
