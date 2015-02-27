@@ -165,13 +165,18 @@ em {
 .header {
     padding: 5px;
     margin-bottom: 1em;
-    
+
     background: none repeat scroll 0 0 #2c3e50;
     color: white;
 }
 
-.header h1 {
+.header h1 a {
+    color: #ffffff;
+}
 
+.header h1 a:hover {
+    color: #B1B1B1;
+    text-decoration: none;
 }
 
 .illustration_logo_header {
