@@ -3,6 +3,7 @@
     <meta charset="utf-8">
     <title>{{ title|striptags|e }} - {{ shorttitle }}</title>
     <link rel="stylesheet" href="{{ pathto('_static/all.css', 1) }}" type="text/css"/>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="{{ pathto('_static/all.js', 1) }}"></script>
 </head>
 <body>
@@ -45,14 +46,10 @@
                     <a href="{{ next.link|e }}">{{ next.title }}&nbsp;&raquo;</a>
                     {% endif %}
                 </div>
-                <div class="box_hr">
-                    <hr/>
-                </div>
                 {% endif %}
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="/assets/symfony-tr.js"></script>
 </body>
 </html>
