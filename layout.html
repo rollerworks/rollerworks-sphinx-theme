@@ -3,8 +3,85 @@
     <meta charset="utf-8">
     <title>{{ title|striptags|e }} - {{ shorttitle }}</title>
     <link rel="stylesheet" href="{{ pathto('_static/all.css', 1) }}" type="text/css"/>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="{{ pathto('_static/all.js', 1) }}"></script>
+    <script src="http://symfony.com/js/v5/all.js?v=4"></script>
+
+<style>
+.highlight .k, .highlight .gh, .highlight .gp,
+.highlight .gu, .highlight .kc, .highlight .kd,
+.highlight .kn, .highlight .kr, .highlight .nc,
+.highlight .nd, .highlight .ni, .highlight .nl,
+.highlight .nn, .highlight .nt, .highlight .ow,
+.highlight .se { font-weight: normal; }
+
+.highlight .c, .highlight .cm, .highlight .c1,
+.highlight .sd, .highlight .si { font-style: normal; }
+
+.doc { background: none; }
+
+pre {
+    border: 0 none;
+    font-family: Menlo, Monaco, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+pre {
+    overflow-wrap: initial;
+    white-space: pre;
+    word-break: initial;
+}
+
+table.highlighttable {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.literal-block {
+    /*margin: 1.5em 0;*/
+    max-width: 100%;
+    width: 100%;
+}
+
+.literal-block pre {
+    background-color: #18171b;
+    border-radius: 0;
+    color: #ffffff;
+    margin: 0;
+    padding: 1em;
+}
+
+.literal-block .highlighttable {
+    border: 0 none;
+    /*margin: 0;*/
+    width: 100%;
+}
+
+.literal-block .highlighttable td.linenos {
+    background-color: #18171b;
+    border: 0 none;
+    min-width: 35px;
+    padding: 0;
+    text-align: right;
+    width: 35px;
+}
+
+.literal-block .highlighttable td.linenos pre {
+    background-color: #18171b;
+    border-right: 1px solid #222222;
+    color: #63606b;
+    padding: 1em 0.5em;
+}
+
+.literal-block .highlighttable td.code {
+    background: #18171b none repeat scroll 0 0;
+    border: 0 none;
+    padding: 0;
+}
+
+.literal-block .highlighttable td.code .highlight {
+    background-color: #18171b;
+}
+</style>
 </head>
 <body>
 <div class="container">
