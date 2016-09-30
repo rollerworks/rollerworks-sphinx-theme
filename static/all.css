@@ -80,7 +80,7 @@ body {
 
 p {
     font-size: 14px;
-    padding-bottom: 10px
+    padding: 0 0 1.5em;
 }
 
 a {
@@ -233,7 +233,7 @@ em {
 }
 
 .column_02 {
-    width: 690px;
+    width: 790px;
     padding-left: 34px
 }
 
@@ -420,7 +420,7 @@ em {
 
 .column_01 .box_article p {
     color: #737373;
-    padding-bottom: 0
+    /*padding-bottom: 0*/
 }
 
 .box_relative_content {
@@ -507,7 +507,7 @@ em {
 .box_article p {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
     color: #444;
-    padding-bottom: 0;
+    padding-bottom: 1em;
 }
 
 .box_article .title_04 {
@@ -543,8 +543,8 @@ em {
 }
 
 .box_article h2 {
-    margin-bottom: 12px;
-    font-size: 18px
+    /*margin-bottom: 0.5em;*/
+    font-size: 24px
 }
 
 .content_article {
@@ -1330,7 +1330,7 @@ div.admonition {
     background: #f5f5f5;
     margin: 2em 0;
     min-height: 51px;
-    padding: 15px 0 5px 55px;
+    padding: 15px 10px 5px 55px;
     width: 92%;
 }
 
@@ -1668,9 +1668,9 @@ table .highlight {
 
 .doc_page h2, .doc_page h3, .doc_page h4, .doc_page h5 {
     color: #313131;
-    padding-bottom: 20px;
+    padding-bottom: 0.5em;
+    padding-top: 1.5em;
     font-style: italic;
-    padding-top: 20px
 }
 
 .doc_page h2, .doc_page h3 {

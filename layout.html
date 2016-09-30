@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>{{ title|striptags|e }} - {{ shorttitle }}</title>
+    <title>{{ title|striptags|e }} - {{ shorttitle }} </title>
     <link rel="stylesheet" href="{{ pathto('_static/all.css', 1) }}" type="text/css"/>
     <script src="http://symfony.com/js/v5/all.js?v=4"></script>
 
@@ -86,7 +86,7 @@ table.highlighttable {
 <body>
 <div class="container">
     <div class="header">
-        <h1><a href="{{ pathto(master_doc) }}">{{ shorttitle }}</a></h1>
+        <h1><a href="{{ pathto(master_doc) }}">{{ shorttitle }} </a></h1>
     </div>
     <div class="main_content">
         <div class="box_columns clear_fix">
@@ -118,8 +118,8 @@ table.highlighttable {
                     {% if prev %}
                     <a href="{{ prev.link|e }}">&laquo;&nbsp;{{ prev.title }}</a>
                     {% endif %}
-                    <span class="separator">|</span>
                     {% if next %}
+                    <span class="separator">|</span>
                     <a href="{{ next.link|e }}">{{ next.title }}&nbsp;&raquo;</a>
                     {% endif %}
                 </div>
